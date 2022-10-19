@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial;
+    background-color: #42AFF1;
+}
+
+.header{
+    padding:2rem;
+    background-color: pink;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.main{
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding:3rem 0 3rem 0;
+}
+
+.weather{
+    height: 400px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+    border-radius: 0.9375rem;
+    gap: 1.875rem;
+    display: none;
+}
+
+.weather__error{
+    color: red;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: none;
+}
+/* 
+.weather__label{
+
+} */
+
+.weather__error.loading{
+    display: block;
+    color: red;
+    border: 1px solid blue;
+    text-align: center;
+}
+
+.weather__input{
+    border-radius: 1.875rem;
+    height:30px;
+    width: 200px;
+    text-align: center;
+}
+
+.weather__paragraph{
+    font-size: 1.5rem;
+    color: red;
+
+}
+
+.weather__button{
+    border-radius: 1.875rem;
+    width:200px;
+    height: 30px;
+}
+
+/* Weather info */
+
+.weather__info{
+    display: flex;
+    gap: .75rem;
+}
+
+.weather__figure{
+    height:100px;
+    width:100px;
+}
+
+.weather__img{
+    width:100%;
+    height:100%;
+}
+
+.weather__location{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/* Footer */
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid blue;
+    padding:1rem;
+}
+
+.footer__name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer__social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

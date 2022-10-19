@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Fontawsome -->
+    <script src="https://kit.fontawesome.com/37ee1699ac.js" crossorigin="anonymous"></script>
+    <!-- End of fontawesome -->
+    <title>Weather App</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <figure class="nav__figure">
+                <img src="" alt="logowwww">
+            </figure>
+            <ul class="nav__ul">
+                <li class="nav__li">
+                    <a class="nav__link" href="">Home</a>
+                    <a class="nav__link" href="">Favourites</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main">
+        <article class="weather">
+          <h1 class="weather__main-title">
+            Aplicacion de clima
+          </h1>
+            <p class="weather__error" id="info-weather">Error, enter a valid city name</p>
+            <label for="" class="weather__label">Enter a city name</label>
+            <input type="text" class="weather__input" placeholder="press enter to search" id="input-search">
+            <p class="weather__paragraph">OR</p>
+            <button class="weather__button">Search by actual location</button>
+        </article>
+
+        <article class="weather__info weather">
+          <figure class="weather__figure">
+            <img src="./images/cloud.svg" alt="" class="weather__img">
+          </figure>
+          <div class="weather__temp">
+            <p class="weather__temp--numb number">13</p>
+            <p class="weather__temp--degrees degrees">°C</p>
+          </div>
+          <div class="weather__name">Broken Clouds</div>
+          <div class="weather__location">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="weather__location--paragraph">
+              Buenos Aires, Argentina
+            </p>
+          </div>
+          <div class="weather__details">
+            <div class="weather__column left">
+              <div class="weather__icon">
+                <i class="fa-light fa-temperature-half"></i>
+              </div>
+              <div class="weather__details--container">
+                <p class="weather__details--numb number">
+                  17
+                </p>
+                <p class="weather__details--degrees degrees">
+                °C
+                </p>
+                <p>Sensacion termica</p>
+              </div>
+
+            </div>
+
+            <div class="weather__column right">
+              <div class="weather__icon">
+                <i class="fa-solid fa-droplet-percent"></i>
+              </div>
+              <div class="weather__details--container">
+                <p class="weather__details--numb number">84%</p>
+                <p>Humedad</p>
+              </div>
+            </div>
+        </article>
+
+
+    </main>
+
+    <footer class="footer">
+        <article class="footer__name">
+            <p class="footer__paragraph">2022 - Facundo Rios</p>
+            <p class="footer__paragraph">Todos los derechos reservados.</p>
+          </article>
+    
+          <article class="footer__social">
+            <figure class="footer__figure">
+              <a
+                href="https://www.linkedin.com/in/alenchufacundorios/"
+                target="_blank"
+              >
+                <img
+                  src="images/linkedin.svg"
+                  alt="logo de linkedin"
+                  name="logo-linkedin"
+                  class="footer__img"
+                />
+              </a>
+            </figure>
+    
+            <figure class="footer__figure">
+              <a
+                href="https://www.instagram.com/alenchufacundorios/"
+                target="_blank"
+              >
+                <img
+                  src="images/ig.svg"
+                  alt="logo de instagram"
+                  name="instragram-logo"
+                  class="footer__img"
+                />
+              </a>
+            </figure>
+    
+            <figure class="footer__picture">
+              <a href="https://github.com/alenchufacundo" target="_blank">
+                <img
+                  src="images/github.svg"
+                  alt="logo de github"
+                  name="github-logo"
+                  class="footer__img"
+                />
+              </a>
+            </figure>
+          </article>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>
